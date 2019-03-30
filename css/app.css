@@ -718,8 +718,9 @@ img {
   color: #464646; }
 
 .footer__icon {
-  text-align: center;
-  margin-top: 2%; }
+  width: 5%;
+  margin-top: 20px;
+  margin: 0 auto; }
 
 .footer__copy {
   font-family: sans-serif;
