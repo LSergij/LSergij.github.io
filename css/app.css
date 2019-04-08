@@ -303,7 +303,9 @@ template {
 [hidden] {
   display: none; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box; }
 
 header {
@@ -313,13 +315,67 @@ header {
   box-sizing: border-box;
   background: bisque; }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+  @media screen and (max-width: 992px) {
+    body,
+    html {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+      body img,
+      html img {
+        max-width: 90%; }
+      body .logo,
+      html .logo {
+        font-size: 16px; }
+      body .header__page-link,
+      html .header__page-link {
+        font-size: 16px; }
+      body form,
+      html form {
+        max-width: 70%; }
+      body .content__title,
+      html .content__title {
+        font-size: 10px;
+        line-height: 1; }
+      body .content__log,
+      html .content__log {
+        font-size: 18px; }
+      body input,
+      html input {
+        max-width: 90%;
+        font-size: 10px; }
+      body .content_div,
+      html .content_div {
+        font-size: 10px; }
+      body button,
+      html button {
+        max-width: 45%;
+        font-size: 10px; }
+      body .content__with-form-buttons,
+      html .content__with-form-buttons {
+        width: 87%; }
+      body .content__with-form-buttons-left,
+      html .content__with-form-buttons-left {
+        padding: 0px 0px; }
+      body .content__with-form-buttons-right,
+      html .content__with-form-buttons-right {
+        padding: 0px 0px; }
+      body .content__with-check-forgot,
+      html .content__with-check-forgot {
+        width: 80%; }
+      body [type=checkbox],
+      html [type=checkbox] {
+        max-width: 20%; }
+      body .content__forgot,
+      html .content__forgot {
+        font-size: 10px; } }
 
 form {
-  width: 50%; }
+  width: 100%;
+  max-width: 450px; }
 
 .wrapper {
   display: flex;
